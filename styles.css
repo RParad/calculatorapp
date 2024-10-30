@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.calculator-case {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.screen {
+    background-color: beige;
+    border: bold 1em black;
+}
+.digits-numbers {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 75px;
+}
