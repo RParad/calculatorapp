@@ -37,4 +37,30 @@ function operate(x, y, operator) {
 } 
 
 // Calling above function...this operator works with given values/inputs
-operate(firstNumber, secondNumber, operator)
+// operate(firstNumber, secondNumber, operator)
+
+// Task 5: Create the functions that populate the display 
+// a) create the event listener for numbers to be pressed 
+let numbers = document.querySelectorAll('.digits');
+let operators = document.querySelectorAll('.operators');
+let clear = document.querySelector('.clear').addEventListener("click", () => console.log(" "));
+let equal = document.querySelector('.equal');
+
+// Number of click returned now!
+numbers.forEach(number => {
+    outcome = number.addEventListener('click', () => console.log(number.textContent));
+}); 
+
+operators.forEach(getOp => {
+    outcome = getOp.addEventListener('click', () => console.log(getOp.textContent));
+}); 
+
+
+// numbers.addEventListener('click', function(e){
+//     for (number of numbers) {
+//         if (numbers.values() === 1) {
+//             return 1
+//         }
+//     }
+// });
+
