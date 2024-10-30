@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 .calculator-case {
     display: flex;
@@ -14,6 +14,9 @@ body {
 .screen {
     background-color: beige;
     border: bold 1em black;
+    height: 50px;
+    width: 100px;
+    text-align: center;
 }
 .digits-numbers {
     display: flex;
