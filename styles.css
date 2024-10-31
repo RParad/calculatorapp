@@ -1,26 +1,110 @@
+/* Center calculator on page */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
 }
+
+/* Calculator container styling */
 .calculator-case {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    align-items: center;
-    justify-content: center;
+    width: 250px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+/* Display screen styling */
 .screen {
     background-color: beige;
-    border: bold 1em black;
+    border: 2px solid #444;
     height: 50px;
-    width: 100px;
-    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
+
+/* Container for digits and operators */
 .digits-numbers {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Styling for number buttons */
+.digits-numbers .digits {
+    background-color: #666;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hover effect for number buttons */
+.digits-numbers .digits:hover {
+    background-color: #888;
+}
+
+/* Operator buttons styling */
+.operators {
+    background-color: #ff8c00;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hover effect for operators */
+.operators:hover {
+    background-color: #ffa726;
+}
+
+/* Equal button styling */
+.equal {
+    background-color: #00bfa5;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    grid-column: span 2;
+}
+
+/* Hover effect for equal button */
+.equal:hover {
+    background-color: #1de9b6;
+}
+
+/* Clear button styling */
+.clear {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hover effect for clear button */
+.clear:hover {
+    background-color: #e57373;
 }
